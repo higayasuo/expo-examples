@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "custom-url",
+    "slug": "custom-url",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "haip",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [{
+            "scheme": "haip"
+          }],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
