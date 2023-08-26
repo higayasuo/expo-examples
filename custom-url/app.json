@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.higayasuo.customurl"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,15 +27,31 @@
       "intentFilters": [
         {
           "action": "VIEW",
-          "data": [{
-            "scheme": "haip"
-          }],
-          "category": ["BROWSABLE", "DEFAULT"]
+          "data": [
+            {
+              "scheme": "haip"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
         }
       ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b4a86e32-ddda-45f3-9f7e-051ae8e1441d"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/b4a86e32-ddda-45f3-9f7e-051ae8e1441d"
     }
   }
 }
